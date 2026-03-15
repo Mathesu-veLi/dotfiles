@@ -1,0 +1,19 @@
+{
+  "custom/spotify": {
+    "format": "{icon} {text}",
+    "return-type": "json",
+    "max-length": 40,
+    "escape": true,
+    "exec": "~/.config/waybar/scripts/waybar-spotify.sh",
+    "format-icons": {
+      "Playing": "",
+      "Paused": "<span></span>"
+    },
+    "on-click": "playerctl play-pause --player spotify",
+    "on-click-right": "playerctl next --player spotify",
+    "on-click-middle": "playerctl previous --player spotify",
+    "on-scroll-up": "playerctl volume 0.05+",
+    "on-scroll-down": "playerctl volume 0.05-",
+    "smooth-scrolling-threshold": 1
+  }
+}
