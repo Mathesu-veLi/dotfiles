@@ -65,17 +65,18 @@ output * bg /home/veli/Pictures/batux-wallpaper.png fill
 
 default_border pixel 2
 gaps inner 5px
-gaps outer 5px
+gaps outer 8px
 smart_gaps inverse_outer
 blur enable
 blur_radius 3
 blur_passes 3
-
+corner_radius 10
 
 set $border_color #16302B
 client.focused $border_color $border_color #ffffff $border_color
 
 seat seat0 xcursor_theme "Bibata-Modern-Ice" 20
+font pango:Iosevka Nerd Font 11
 
 ### Key bindings
 #
