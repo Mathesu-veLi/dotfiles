@@ -278,8 +278,10 @@ exec clipse -listen
 exec blueman-applet
 exec vesktop -m
 exec spotify --app-id="spotify"
+exec firefox --app-id="firefox"]
 
-for_window [app_id="spotify"] move scratchpad;
+for_window [app_id="firefox"] move to workspace 1, focus 
+for_window [app_id="spotify"] move scratchpad, resize set 80ppt 80ppt;
 for_window [app_id="clipse-floating"] floating enable, move position center, resize set 80ppt 80ppt
 for_window [class="jetbrains-idea"] opacity 0.9
 
