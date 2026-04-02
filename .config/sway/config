@@ -105,6 +105,7 @@ font pango:Iosevka Nerd Font 11
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 	
     bindsym $mod+escape exec loginctl terminate-user $USER
+    bindsym $mod+Ctrl+escape exec swaylock -f && systemctl suspend
 #
 # Moving around:
 #
@@ -251,6 +252,8 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     bindsym Print exec grim
     bindsym $mod+Shift+W exec "pkill -x waybar; waybar"
+    bindsym $mod+Shift+x exec foot -e swaybinds --app-id="swaybinds"
+
 
 #
 # Status Bar:
